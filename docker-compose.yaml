@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  tor-proxy:
+    build: tor-proxy/.
+    container_name: tor-proxy
+    ports:
+    - 9050:9050
+    restart: always
